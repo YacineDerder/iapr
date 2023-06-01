@@ -131,20 +131,20 @@ def save_solved_puzzles(image_index , solution, saving_path):
 
 #example of how to use the function
 
-## random data
-mask = np.random.randint(0,2,(2000,2000))
-feature_map = np.random.rand(30, 200)
-cluster = [[np.zeros((128,128,3)) + np.random.randint(i*100 , (i+1)*80, size=3) for _ in range(np.random.randint(10,20))] for i in range(3)]
+# ## random data
+# mask = np.random.randint(0,2,(2000,2000))
+# feature_map = np.random.rand(30, 200)
+# cluster = [[np.zeros((128,128,3)) + np.random.randint(i*100 , (i+1)*80, size=3) for _ in range(np.random.randint(10,20))] for i in range(3)]
 
-## append the outliers too!
-outliers =[np.zeros((128,128,3)) + np.random.randint(0,254 , size =3 ) for _ in range(3)]
-cluster.append(outliers)
+# ## append the outliers too!
+# outliers =[np.zeros((128,128,3)) + np.random.randint(0,254 , size =3 ) for _ in range(3)]
+# cluster.append(outliers)
 
-solved_puzzle = [np.zeros((128*3,128*4,3)) + np.random.randint(0,254, size=3) for _ in range(3)]
+# solved_puzzle = [np.zeros((128*3,128*4,3)) + np.random.randint(0,254, size=3) for _ in range(3)]
 
-solution = [mask, feature_map, cluster, solved_puzzle]
+# solution = [mask, feature_map, cluster, solved_puzzle]
 
-#saving solution for image 1
-export_solutions(1,  solution, path = "data_project", group_id = "00")
+# #saving solution for image 1
+# export_solutions(1,  solution, path = "data_project", group_id = "00")
 
 
